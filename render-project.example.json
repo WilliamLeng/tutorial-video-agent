@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "title": "示例操作教程",
+  "source_video": "../source.mp4",
+  "output_video": "../outputs/final.mp4",
+  "voice": "Tingting",
+  "voice_rate": 175,
+  "max_speed": 1.5,
+  "background_music": true,
+  "intro": {
+    "title": "产品或功能名称",
+    "subtitle": "操作教程",
+    "narration": "用一句话说明这个功能解决什么问题，以及学完后能完成什么。",
+    "screenshot_at": 10.0,
+    "value_text": "本教程的核心价值",
+    "duration": 10.0
+  },
+  "steps": [
+    {
+      "title": "打开功能入口",
+      "narration": "进入应用，然后点击功能入口。",
+      "clips": [
+        {"start": 12.0, "end": 18.0}
+      ],
+      "effects": [
+        {
+          "kind": "click",
+          "start": 1.0,
+          "end": 2.5,
+          "x": 0.70,
+          "y": 0.80,
+          "width": 0.20,
+          "height": 0.10,
+          "label": "点击这里"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tutorial-video-agent"
+version = "0.1.0"
+description = "使用本地模型和本机工具将自然讲解录屏整理为标准化操作教程"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pydantic>=2.7,<3",
+  "typer>=0.12,<1",
+]
+
+[project.optional-dependencies]
+local-asr = [
+  "mlx-whisper>=0.4",
+]
+dev = [
+  "pytest>=8,<9",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+tutorial-video = "tutorial_video.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tutorial_video"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+ignore = ["FA100"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/tutorial_video/cli.py" = ["B008"]

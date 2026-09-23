@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "title": "示例功能设置教程",
+  "introduction": "本教程演示如何打开示例功能、完成设置并查看结果。",
+  "learning_goal": "完成一次示例功能设置并确认处理结果。",
+  "steps": [
+    {
+      "id": "step-01",
+      "title": "打开功能入口",
+      "narration": "进入示例应用，然后点击工具页中的示例功能。",
+      "source_range": {"start": 12.0, "end": 18.0},
+      "click_text": "示例功能",
+      "result": "进入功能设置页面",
+      "visual_treatment": "保留点击前后画面，并在入口位置添加点击提示",
+      "confidence": 0.95,
+      "needs_review": false,
+      "evidence": [
+        {
+          "kind": "speech",
+          "description": "原讲解说明需要从工具页打开示例功能",
+          "source_range": {"start": 12.4, "end": 15.8}
+        },
+        {
+          "kind": "screen",
+          "description": "画面出现示例功能入口",
+          "timestamp": 14.2
+        }
+      ]
+    }
+  ],
+  "original_audio_used": false,
+  "direct_final_mode": true,
+  "editing_notes": ["成片输出后统一检查点击位置和字幕安全区"],
+  "warnings": [],
+  "review_issues": []
+}

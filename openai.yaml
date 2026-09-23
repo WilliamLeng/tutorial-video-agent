@@ -1,0 +1,4 @@
+interface:
+  display_name: "录屏教程剪辑"
+  short_description: "将自然讲解录屏自动整理为结构清晰的教程草稿和最终成片"
+  default_prompt: "Use $tutorial-video to analyze this screen recording and produce an evidence-backed tutorial video."
